@@ -5,6 +5,7 @@
 
 presets:
   - id: japan-average
+    # avatar_status: ⏳ not_ordered
     name:
       ja: 日本の平均年収
       en: Japan Average Income
@@ -14,10 +15,12 @@ presets:
       is_estimated: true
       note: "国税庁 民間給与実態統計調査 (参考値) — リリース前に最新版に更新"
     image:
+      asset_name: avatar_japan-average
       emoji_fallback: 🇯🇵
     category: average
 
   - id: japan-minimum-wage-fulltime
+    # avatar_status: ⏳ not_ordered
     name:
       ja: 最低賃金フルタイム (日本)
       en: Minimum Wage Full-time (Japan)
@@ -27,5 +30,6 @@ presets:
       is_estimated: true
       note: "全国加重平均最低賃金 × 8h × 245日 (参考値) — リリース前に最新版に更新"
     image:
+      asset_name: avatar_japan-minimum-wage-fulltime
       emoji_fallback: ⏰
     category: wage_floor

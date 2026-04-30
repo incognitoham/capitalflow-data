@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-04-30T04:31:35Z",
+  "updated_at": "2026-04-30T04:45:43Z",
   "currency_rates": {
     "usd_jpy": 156.2,
     "rates_updated_at": "2026-04-30T00:00:00Z",
@@ -21,7 +21,7 @@
         "amount_jpy": 10886666666515
       },
       "image": {
-        "asset_name": "elon-musk",
+        "asset_name": "avatar_elon-musk",
         "emoji_fallback": "🚀"
       },
       "category": "tech_billionaire",
@@ -41,6 +41,7 @@
         "amount_jpy": 2503886000000
       },
       "image": {
+        "asset_name": "avatar_jeff-bezos",
         "emoji_fallback": "📦"
       },
       "category": "tech_billionaire",
@@ -60,6 +61,7 @@
         "amount_jpy": 1999360000000
       },
       "image": {
+        "asset_name": "avatar_mark-zuckerberg",
         "emoji_fallback": "👓"
       },
       "category": "tech_billionaire",
@@ -79,6 +81,7 @@
         "amount_jpy": 1499520000000
       },
       "image": {
+        "asset_name": "avatar_bernard-arnault",
         "emoji_fallback": "👜"
       },
       "category": "luxury_billionaire",
@@ -98,6 +101,7 @@
         "amount_jpy": 999680000000
       },
       "image": {
+        "asset_name": "avatar_larry-page",
         "emoji_fallback": "🔍"
       },
       "category": "tech_billionaire",
@@ -117,6 +121,7 @@
         "amount_jpy": 796620000000
       },
       "image": {
+        "asset_name": "avatar_bill-gates",
         "emoji_fallback": "💻"
       },
       "category": "tech_billionaire",
@@ -136,6 +141,7 @@
         "amount_jpy": 702900000000
       },
       "image": {
+        "asset_name": "avatar_warren-buffett",
         "emoji_fallback": "📈"
       },
       "category": "investor_billionaire",
@@ -155,6 +161,7 @@
         "amount_jpy": 10934000000
       },
       "image": {
+        "asset_name": "avatar_shohei-ohtani",
         "emoji_fallback": "⚾"
       },
       "category": "athlete",

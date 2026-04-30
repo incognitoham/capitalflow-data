@@ -50,6 +50,26 @@ function assertUniqueIds(people, label) {
   }
 }
 
+function assertAssetNames(people, label) {
+  const pattern = /^avatar_[a-z0-9-]+$/
+  for (const p of people) {
+    const assetName = p.image?.asset_name
+    if (!assetName) {
+      console.error(`\n❌ ${p.id}: image.asset_name が設定されていません (${label})`)
+      process.exit(1)
+    }
+    if (!pattern.test(assetName)) {
+      console.error(`\n❌ ${p.id}: asset_name "${assetName}" が命名規則 ^avatar_[a-z0-9-]+$ に違反しています`)
+      process.exit(1)
+    }
+    const expected = `avatar_${p.id}`
+    if (assetName !== expected) {
+      console.error(`\n❌ ${p.id}: asset_name "${assetName}" は "avatar_${p.id}" でなければなりません`)
+      process.exit(1)
+    }
+  }
+}
+
 // ─── 変換ロジック ────────────────────────────────────────────────
 
 function buildBillionaires(yaml, updatedAt) {
@@ -78,6 +98,7 @@ function buildBillionaires(yaml, updatedAt) {
   })
 
   assertUniqueIds(people, 'billionaires')
+  assertAssetNames(people, 'billionaires')
 
   return {
     version: 1,
@@ -98,6 +119,7 @@ function buildPresets(yaml, updatedAt) {
   })
 
   assertUniqueIds(presets, 'presets')
+  assertAssetNames(presets, 'presets')
 
   return {
     version: 1,
