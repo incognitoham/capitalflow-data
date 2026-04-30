@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "billionaires.schema.json",
+  "title": "CapitalFlow Billionaires",
+  "type": "object",
+  "required": ["version", "updated_at", "currency_rates", "people"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "スキーマバージョン"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "データ更新日時 (UTC ISO8601)"
+    },
+    "currency_rates": {
+      "type": "object",
+      "required": ["usd_jpy", "rates_updated_at"],
+      "additionalProperties": false,
+      "properties": {
+        "usd_jpy": { "type": "number", "exclusiveMinimum": 0 },
+        "rates_updated_at": { "type": "string", "format": "date-time" },
+        "source": { "type": "string" }
+      }
+    },
+    "people": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/person" }
+    }
+  },
+  "$defs": {
+    "person": {
+      "type": "object",
+      "required": ["id", "name", "annual_income"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "kebab-case の一意 ID (変更不可)"
+        },
+        "name": {
+          "type": "object",
+          "required": ["ja", "en"],
+          "additionalProperties": false,
+          "properties": {
+            "ja": { "type": "string", "minLength": 1 },
+            "en": { "type": "string", "minLength": 1 }
+          }
+        },
+        "annual_income": {
+          "type": "object",
+          "required": ["amount_jpy", "source_currency", "is_estimated"],
+          "additionalProperties": false,
+          "properties": {
+            "amount_jpy": { "type": "integer", "minimum": 0 },
+            "amount_usd": { "type": "integer", "minimum": 0 },
+            "source_currency": { "type": "string", "enum": ["jpy", "usd"] },
+            "is_estimated": { "type": "boolean" },
+            "note": { "type": "string" }
+          }
+        },
+        "image": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "asset_name": { "type": "string" },
+            "url": { "type": "string", "format": "uri" },
+            "emoji_fallback": { "type": "string" }
+          }
+        },
+        "category": { "type": "string" },
+        "rank_hint": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

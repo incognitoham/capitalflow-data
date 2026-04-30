@@ -1,0 +1,124 @@
+# CapitalFlow billionaires source data
+# 編集後 `npm run build` で public/api/v1/billionaires.json を再生成すること
+# 数値ソース: Forbes Real-Time Billionaires (https://www.forbes.com/real-time-billionaires/)
+# レートソース: 日銀 基準外国為替相場 (https://www.boj.or.jp/)
+# リリース前に全ての数値を最新値に更新すること
+
+currency_rates:
+  usd_jpy: 156.20          # リリース前に最新レートに更新
+  rates_updated_at: "2026-04-30T00:00:00Z"
+  source: manual
+
+people:
+  - id: elon-musk
+    name:
+      ja: イーロン・マスク
+      en: Elon Musk
+    annual_income:
+      amount_usd: 28809219000   # 約 288 億ドル (推定) — リリース前に更新
+      source_currency: usd
+      is_estimated: true
+      note: "Forbes 2026 推定値 — リリース前に最新値に更新"
+    image:
+      asset_name: elon-musk
+      emoji_fallback: 🚀
+    category: tech_billionaire
+    rank_hint: 1
+
+  - id: jeff-bezos
+    name:
+      ja: ジェフ・ベゾス
+      en: Jeff Bezos
+    annual_income:
+      amount_usd: 16030000000   # 約 160 億ドル (推定) — リリース前に更新
+      source_currency: usd
+      is_estimated: true
+      note: "Forbes 2026 推定値 — リリース前に最新値に更新"
+    image:
+      emoji_fallback: 📦
+    category: tech_billionaire
+    rank_hint: 2
+
+  - id: mark-zuckerberg
+    name:
+      ja: マーク・ザッカーバーグ
+      en: Mark Zuckerberg
+    annual_income:
+      amount_usd: 12800000000   # 約 128 億ドル (推定) — リリース前に更新
+      source_currency: usd
+      is_estimated: true
+      note: "Forbes 2026 推定値 — リリース前に最新値に更新"
+    image:
+      emoji_fallback: 👓
+    category: tech_billionaire
+    rank_hint: 3
+
+  - id: bernard-arnault
+    name:
+      ja: ベルナール・アルノー
+      en: Bernard Arnault
+    annual_income:
+      amount_usd: 9600000000    # 約 96 億ドル (推定) — リリース前に更新
+      source_currency: usd
+      is_estimated: true
+      note: "Forbes 2026 推定値 — リリース前に最新値に更新"
+    image:
+      emoji_fallback: 👜
+    category: luxury_billionaire
+    rank_hint: 4
+
+  - id: larry-page
+    name:
+      ja: ラリー・ペイジ
+      en: Larry Page
+    annual_income:
+      amount_usd: 6400000000    # 約 64 億ドル (推定) — リリース前に更新
+      source_currency: usd
+      is_estimated: true
+      note: "Forbes 2026 推定値 — リリース前に最新値に更新"
+    image:
+      emoji_fallback: 🔍
+    category: tech_billionaire
+    rank_hint: 5
+
+  - id: bill-gates
+    name:
+      ja: ビル・ゲイツ
+      en: Bill Gates
+    annual_income:
+      amount_usd: 5100000000    # 約 51 億ドル (推定) — リリース前に更新
+      source_currency: usd
+      is_estimated: true
+      note: "Forbes 2026 推定値 — リリース前に最新値に更新"
+    image:
+      emoji_fallback: 💻
+    category: tech_billionaire
+    rank_hint: 6
+
+  - id: warren-buffett
+    name:
+      ja: ウォーレン・バフェット
+      en: Warren Buffett
+    annual_income:
+      amount_usd: 4500000000    # 約 45 億ドル (推定) — リリース前に更新
+      source_currency: usd
+      is_estimated: true
+      note: "Forbes 2026 推定値 — リリース前に最新値に更新"
+    image:
+      emoji_fallback: 📈
+    category: investor_billionaire
+    rank_hint: 7
+
+  - id: shohei-ohtani
+    name:
+      ja: 大谷翔平
+      en: Shohei Ohtani
+    annual_income:
+      amount_usd: 70000000      # $700M / 10年契約 — 実際の受取額とは異なる場合あり
+      source_currency: usd
+      is_estimated: true
+      note: "LAドジャース契約総額 $700M / 10年 — リリース前に最新値に更新"
+    image:
+      emoji_fallback: ⚾
+    category: athlete
+    rank_hint: 8

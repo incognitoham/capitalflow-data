@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "updated_at": "2026-04-30T02:35:29Z",
+  "themes": [
+    {
+      "id": "default",
+      "display_name": {
+        "ja": "標準",
+        "en": "Default"
+      },
+      "is_premium": false,
+      "bill_asset_name": "bill_default",
+      "background_colors": [
+        "#0B0F1A",
+        "#14182A"
+      ]
+    },
+    {
+      "id": "gold_rain",
+      "display_name": {
+        "ja": "ゴールドレイン",
+        "en": "Gold Rain"
+      },
+      "is_premium": false,
+      "bill_asset_name": "bill_gold",
+      "background_colors": [
+        "#1A1200",
+        "#2A2000"
+      ]
+    },
+    {
+      "id": "neon",
+      "display_name": {
+        "ja": "ネオン",
+        "en": "Neon"
+      },
+      "is_premium": true,
+      "bill_asset_name": "bill_neon",
+      "background_colors": [
+        "#0A000A",
+        "#1A001A"
+      ]
+    },
+    {
+      "id": "crypto",
+      "display_name": {
+        "ja": "クリプト",
+        "en": "Crypto"
+      },
+      "is_premium": true,
+      "bill_asset_name": "bill_crypto",
+      "background_colors": [
+        "#000814",
+        "#001A2E"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "updated_at": "2026-04-30T02:35:29Z",
+  "presets": [
+    {
+      "id": "japan-average",
+      "name": {
+        "ja": "日本の平均年収",
+        "en": "Japan Average Income"
+      },
+      "annual_income": {
+        "amount_jpy": 4580000,
+        "source_currency": "jpy",
+        "is_estimated": true,
+        "note": "国税庁 民間給与実態統計調査 (参考値) — リリース前に最新版に更新"
+      },
+      "image": {
+        "emoji_fallback": "🇯🇵"
+      },
+      "category": "average"
+    },
+    {
+      "id": "japan-minimum-wage-fulltime",
+      "name": {
+        "ja": "最低賃金フルタイム (日本)",
+        "en": "Minimum Wage Full-time (Japan)"
+      },
+      "annual_income": {
+        "amount_jpy": 2200000,
+        "source_currency": "jpy",
+        "is_estimated": true,
+        "note": "全国加重平均最低賃金 × 8h × 245日 (参考値) — リリース前に最新版に更新"
+      },
+      "image": {
+        "emoji_fallback": "⏰"
+      },
+      "category": "wage_floor"
+    }
+  ]
+}

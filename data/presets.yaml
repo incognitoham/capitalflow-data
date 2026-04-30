@@ -1,0 +1,31 @@
+# CapitalFlow presets source data
+# 著名人ではなく参考統計値として表示するエントリ
+# ソース: 国税庁 民間給与実態統計調査 / 厚生労働省 最低賃金
+# リリース前に全ての数値を最新の公的統計に更新すること
+
+presets:
+  - id: japan-average
+    name:
+      ja: 日本の平均年収
+      en: Japan Average Income
+    annual_income:
+      amount_jpy: 4580000     # 参考値 — 国税庁最新データに更新すること
+      source_currency: jpy
+      is_estimated: true
+      note: "国税庁 民間給与実態統計調査 (参考値) — リリース前に最新版に更新"
+    image:
+      emoji_fallback: 🇯🇵
+    category: average
+
+  - id: japan-minimum-wage-fulltime
+    name:
+      ja: 最低賃金フルタイム (日本)
+      en: Minimum Wage Full-time (Japan)
+    annual_income:
+      amount_jpy: 2200000     # 参考値 — 全国加重平均 × 8h × 245日
+      source_currency: jpy
+      is_estimated: true
+      note: "全国加重平均最低賃金 × 8h × 245日 (参考値) — リリース前に最新版に更新"
+    image:
+      emoji_fallback: ⏰
+    category: wage_floor

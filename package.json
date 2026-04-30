@@ -1,0 +1,20 @@
+{
+  "name": "capitalflow-data",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static JSON API for CapitalFlow iOS app — hosted on Cloudflare Pages",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "dev": "npx wrangler pages dev public"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,3 @@
+# リダイレクト設定 (将来用)
+# 旧バージョンの URL を最新へリダイレクト
+# /api/billionaires.json   /api/v1/billionaires.json   301
