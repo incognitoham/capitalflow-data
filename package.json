@@ -7,11 +7,14 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "validate": "node scripts/validate.mjs",
-    "dev": "npx wrangler pages dev public"
+    "dev": "npx wrangler pages dev public",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "devDependencies": {
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
+    "wrangler": "^4.86.0",
     "yaml": "^2.7.0"
   },
   "engines": {
