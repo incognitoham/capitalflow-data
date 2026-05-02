@@ -17,7 +17,7 @@ people:
       ja: イーロン・マスク
       en: Elon Musk
     annual_income:
-      amount_usd: 8999  # リリース前に最新値に更新
+      amount_usd: 89990000  # リリース前に最新値に更新
       source_currency: usd
       is_estimated: true
       note: "Forbes 2026 推定値 — リリース前に最新値に更新"
